@@ -1,0 +1,65 @@
+.nav {
+  display: flex;
+  gap: 550px;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.867);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.nav-brand img {
+  width: 80px;
+  height: 80px;
+  object-fit: fill;
+  cursor: pointer;
+  margin-left: 40px;
+  border-radius: 50%;
+}
+
+.nav-title h2 {
+  font-size: 45px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #ff416c,
+    #ff4b2b,
+    #ffcc33,
+    #48c6ef,
+    #6f86d6,
+    #ef32d9,
+    #89fffd
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 6s ease-in-out infinite, shimmer 1s ease-in-out infinite;
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
